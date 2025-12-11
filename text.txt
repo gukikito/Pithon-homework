@@ -1,0 +1,15 @@
+CREATE table cars (
+car_id SERIAL PRIMARY KEY,
+manufacturer_name VARCHAR(40) NOT NULL,
+model_name VARCHAR(40) NOT NULL,
+year_of_release INTEGER NOT NULL,
+vin_code VARCHAR(17) NOT NULL UNIQUE,
+created_at DATE DEFAULT CURRENT_DATE,
+engine NUMERIC (5, 2) CHECK (engine >= 0.5) ,
+mileage_km INTEGER,
+customs_clearance BOOLEAN DEFAULT TRUE,
+price NUMERIC (10, 2) CHECK (price >= 0),
+description TEXT,
+sold BOOLEAN DEFAULT FALSE
+
+);
