@@ -1,0 +1,2 @@
+"car_id","manufacturer_name","model_name","year_of_release","vin_code","created_at","engine","mileage_km","customs_clearance","price","description","sold"
+1,"Chevrolet","Volt",2012,"1G1RE6E48CU124062","2025-12-13","1.398",262000,True,"4700.00",NULL,False
